@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>I'm Lynnette Kisegei — Portfolio</title>
+    <meta name="description" content="Founder, Builder, and Operator — scaling the next generation of AI, SaaS, and Media businesses." />
+    <meta property="og:title" content="I'm Lynnette Kisegei" />
+    <meta property="og:description" content="Founder, Builder, and Operator — scaling the next generation of AI, SaaS, and Media businesses." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta name="theme-color" content="#0b0b0b" />
+
+    <!-- TailwindCSS via CDN (good for a simple static page) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "Helvetica Neue", "Arial", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* subtle fade-in */
+      .fade-in { opacity: 0; transform: translateY(6px); animation: fadeIn 600ms ease-out forwards; }
+      @keyframes fadeIn { to { opacity: 1; transform: none; } }
+      .link-underline::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+      .link-underline:hover::after { transform: scaleX(1); }
+    </style>
+  </head>
+  <body class="bg-neutral-950 text-neutral-100 antialiased">
+    <main class="min-h-screen flex flex-col items-center justify-center p-6">
+      <!-- Header / Name -->
+      <header class="w-full max-w-3xl mx-auto text-left fade-in" style="animation-delay: 80ms">
+        <p class="text-sm uppercase tracking-[0.2em] text-neutral-400">Portfolio</p>
+        <h1 class="mt-3 text-5xl sm:text-6xl font-extrabold">I'm <span class="text-white">Lynnette Kisegei.</span></h1>
+        <p class="mt-4 text-lg sm:text-xl text-neutral-300 leading-relaxed">Founder, Builder, and Operator — scaling the next generation of <span class="text-white">AI</span>, <span class="text-white">SaaS</span>, and <span class="text-white">Media</span> businesses.</p>
+        <p class="mt-2 text-base text-neutral-400">I also share weekly insights on Cloud, AI, and Security.</p>
+      </header>
+
+      <!-- Links / Building -->
+      <section class="w-full max-w-3xl mx-auto mt-12 fade-in" style="animation-delay: 180ms">
+        <h2 class="text-2xl font-semibold text-neutral-200">Building</h2>
+        <div class="mt-6 grid gap-4">
+          <!-- Repeatable link rows -->
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="group block rounded-2xl border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition p-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-neutral-400">YouTube / Tech</p>
+                <p class="mt-1 text-lg">I run a channel about Cloud & AI Engineering — practical builds and career strategy.</p>
+              </div>
+              <span aria-hidden class="ml-4 shrink-0 inline-flex items-center justify-center rounded-full border border-neutral-700 px-3 py-1 text-sm text-neutral-300 group-hover:bg-neutral-800">Visit</span>
+            </div>
+          </a>
+
+          <a href="#" class="group block rounded-2xl border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition p-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-neutral-400">Brand</p>
+                <p class="mt-1 text-lg">The growth partner for startups — combining AI, distribution, and infrastructure.</p>
+              </div>
+              <span aria-hidden class="ml-4 shrink-0 inline-flex items-center justify-center rounded-full border border-neutral-700 px-3 py-1 text-sm text-neutral-300 group-hover:bg-neutral-800">Visit</span>
+            </div>
+          </a>
+
+          <a href="#" class="group block rounded-2xl border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900/60 transition p-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-neutral-400">AWS restart</p>
+                <p class="mt-1 text-lg">A 12‑week cohort-based program that jump‑starts careers in Cloud, AI, and Security.</p>
+              </div>
+              <span aria-hidden class="ml-4 shrink-0 inline-flex items-center justify-center rounded-full border border-neutral-700 px-3 py-1 text-sm text-neutral-300 group-hover:bg-neutral-800">Visit</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Content / Writing -->
+      <section class="w-full max-w-3xl mx-auto mt-10 fade-in" style="animation-delay: 260ms">
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="relative inline-block link-underline">
+          <h2 class="text-xl font-medium">YouTube / AI / Business</h2>
+        </a>
+        <p class="mt-2 text-neutral-300">I make videos on AI, Business, and Technology.</p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="w-full max-w-3xl mx-auto mt-16 mb-6 text-sm text-neutral-500 fade-in" style="animation-delay: 340ms">
+        <div class="flex items-center justify-between">
+          <p>© <span id="year"></span> Lynnette Kisegei. All rights reserved.</p>
+          <nav class="flex gap-4">
+            <a href="mailto:jerutolynnette4@gmail.com" class="hover:text-neutral-300">Email</a>
+            <a href="https://x.com/lynnettetrain" class="hover:text-neutral-300">X</a>
+            <a href="https://github.com/lynnette-jk" class="hover:text-neutral-300">GitHub</a>
+            <a href="/resume.pdf" class="hover:text-neutral-300">Resume</a>
+          </nav>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // set year dynamically
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
